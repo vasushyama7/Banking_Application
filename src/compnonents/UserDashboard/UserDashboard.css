@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 84vw;
+  margin-left: 16vw;
+  font-family: Ubuntu;
+  /* background-color: #180172; */
+  background-image: url("https://res.cloudinary.com/dvmkt80vc/image/upload/v1719556375/bgbank_xsczxr.jpg");
+  color: white;
+  overflow: hidden;
+}
+.userdashboard-main-container{
+
+  padding: 30px;
+}
+.account-info-card{
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  border: 7px;
+  padding: 6px;
+}
+.search-bar {
+  flex: 1;
+  width: 400px;
+  padding: 5px;
+  margin: 0 20px;
+  /* background-color: #572BC7; */
+  background-color: rgba(255, 255, 255, 0.0103);
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  backdrop-filter: blur(2px);
+  color: rgb(255, 255, 255);
+  border: 1px solid #311898;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.address-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.address-content {
+  font-size: 14px;
+}
+
+.content {
+  flex: 1;
+}
+
+.top-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.top-icon {
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.top-icon:hover {
+  color: #000;
+}
+
+.account-info {
+  width:95%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+  animation: slideIn 0.7s ease-in-out ;
+  /* background-color: transparent; */
+ 
+  background-color: rgba(255, 255, 255, 0.103);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
+  margin:20px 0px;
+  margin-left: 15px;
+  border-radius: 7px;
+}
+.account-info p{
+  font-size: 15px;
+}
+.in-out-amount-cards{
+  display: flex;
+}
+.account-info-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 7px;
+  width: 130px;
+  height: 100px;
+  text-align: center;
+  align-self: center;
+  padding: 3px 7px;
+  margin: 3px 10px;
+}
+.balance-info-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 7px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  align-self: center;
+  margin: 3px 10px;
+  padding: 3px 20px;
+}
+.bg-yellow{
+  background-color: rgb(255, 255, 0);
+}
+.bg-green{
+  background-color: rgb(0, 255, 64);
+}
+.dots{
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+  border-radius: 50%;
+}
+.quick-actions {
+  display: flex;
+  width: 99%;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.quick-action {
+  width: 150px;
+  height: 110px;
+  /* background-color: #703ACC; */
+  background-color: rgba(255, 255, 255, 0.103);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  animation: slideIn 1.3s ease-in-out ;
+}
+
+.quick-action:hover {
+  transform: scale(1.1);
+}
+
+.userdashboard-main-container .horizontal-line{
+  /* width: 85vw; */
+  margin-top: -30px;
+  border: solid 1px;
+  margin-bottom: 10px;
+}
+
+.recent-transactions {
+  width: 86;
+  /* background-color: #703ACC; */
+  background-color: rgba(255, 255, 255, 0.103);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 7px;
+  border-radius: 5px;
+  font-size:15px;
+  animation: slideIn 1.3s ease-in-out ;
+  border: white;
+  margin-left: 15px;
+}
+
+.recent-transactions table {
+  margin: 10px;
+  width: 98%;
+  border-collapse: collapse;
+  border: none;
+}
+
+.recent-transactions th,
+.recent-transactions td {
+  
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.recent-transactions th {
+  text-align: left;
+}
+.recent-transactions thead {
+  background-color: #321898b0;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.recent-transactions  h2{
+  padding: 10px;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 300px;
+  margin: 0 20px;
+}
+.search-bar {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
+
+.search-icon {
+  position: absolute;
+  padding-left: 245px;
+  color: #e0e5e9;
+}
+.search-bar::placeholder {
+  color: white;
+}
+
+.progress-bar-container {
+  height: 2px;
+  width: 50%;
+  background-color: #ddd;
+  border-radius: 5px;
+  
+}
+
+.progress-bar {
+  border-radius: 5px;
+}
+
+.flexable-card{
+  display: flex;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(60%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.recent-transactions {
+  width: 86%;
+  background-color: rgba(255, 255, 255, 0.103);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 7px;
+  font-size: 15px;
+  animation: slideIn 1.3s ease-in-out;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.recent-transactions table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.recent-transactions th,
+.recent-transactions td {
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+.recent-transactions th {
+  background-color: #321898b0;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.recent-transactions tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

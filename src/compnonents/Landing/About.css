@@ -1,0 +1,84 @@
+/* Base styles */
+.about {
+    /* Uncomment these styles if needed */
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 35px;
+    flex-wrap: wrap; 
+    gap: 20px;
+    box-sizing: border-box; 
+    color: black; */
+}
+
+.about-cd {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.about-cd-ent {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.about-cd-ent:hover {
+    transform: translate(-2px, -15px) rotate(-3deg);
+    box-shadow: 0 20px 40px -10px rgba(32, 195, 187, 0.5);
+    transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+    background: linear-gradient(to top, #ffffff, #0e238c);
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .about-cd {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-cd-ent {
+        width: 80%;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-cd-ent {
+        width: 90%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-cd-ent {
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    .about-cd-ent:hover {
+        transform: none;
+        box-shadow: 0 0 15px rgba(32, 195, 187, 0.3);
+    }
+}
+
+@media (max-width: 576px) {
+    .about-cd-ent {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        margin-left: 5%;
+    }
+
+    .about-cd-ent:hover {
+        transform: none;
+        box-shadow: 0 0 10px rgba(32, 195, 187, 0.3);
+    }
+}
+    

@@ -1,0 +1,82 @@
+/* Base styles */
+.about-all, .AccountTyps {
+    background-color: #F3F4F6;
+    width: 100vw;
+    color: black;
+}
+
+.About {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #F3F4F6;
+}
+
+.Services {
+    padding-top: 30px;
+}
+
+.Atmcards, .scroll-s {
+    background-color: #F3F4F6;
+    padding: 0 10%;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .About {
+        width: 90%;
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+
+    .Atmcards, .scroll-s {
+        padding: 0 8%;
+    }
+}
+
+@media (max-width: 992px) {
+    .About {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .Atmcards, .scroll-s {
+        padding: 0 6%;
+    }
+}
+
+@media (max-width: 768px) {
+    .About {
+        width: 95%;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+
+    .Atmcards, .scroll-s {
+        padding: 0 4%;
+    }
+    .Services{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .About {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        margin-left: 5%;
+    }
+
+    .Atmcards, .scroll-s {
+        padding: 0 2%;
+
+    }
+    .AccountTyps{
+        margin-left: 6%;
+    }
+}

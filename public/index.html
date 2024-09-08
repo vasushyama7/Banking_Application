@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Zigma Bank Safe and secure friend to transfer your money" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Zigma Bank</title>
+    <script src="https://kit.fontawesome.com/a4efb3269c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.1.4/dist/purecounter_vanilla.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <canvas id="app"></canvas> <!-- Added canvas element -->
+
+    <script type="module">
+      import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const pc = particlesCursor({
+          el: document.getElementById('app'),
+          gpgpuSize: 512,
+          colors: [0x1d9ae8, 0x1d9ae8],
+          color: 0x1d9ae8,
+          coordScale: 0.15,
+        });
+      });
+    </script>
+  </body>
+</html>

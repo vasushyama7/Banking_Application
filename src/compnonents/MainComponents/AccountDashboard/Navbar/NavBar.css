@@ -1,0 +1,28 @@
+.Navbar{
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    background-color: aliceblue;
+}
+
+.Navbar .logo img{
+    padding-left: 20px;
+    width: 50%;
+    height: 120%;
+}
+
+.Navbar .nav-itms{
+
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.Navbar .nav-itms li{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    font-size: 20px;
+}

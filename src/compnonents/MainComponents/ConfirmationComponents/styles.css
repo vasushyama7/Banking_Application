@@ -1,0 +1,42 @@
+
+.confirmation-msg{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  left: 0;
+}
+.registration-message {
+
+  background-color: white;
+    background-color: rgba(0, 128, 0, 0.5); 
+    width: 75%;
+    border-radius: 10px; 
+    padding: 40px;
+    margin: 50px auto; 
+    text-align: center; 
+    color: #fff;
+    font-family: Arial, sans-serif; 
+    animation: fadeIn 0.8s ease-out;
+  }
+  .confirmation-msg h4{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+    color: black;
+  }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+

@@ -1,0 +1,95 @@
+.Navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #ffffff, #0e238c);
+}
+.Navbar .landing-nav-itms{
+    margin-right: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Navbar .landing-nav-itms a{
+    transition: 0.3s ease-in-out;
+    margin:0 1em ;
+    height: fit-content;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 6px;
+
+}
+.Navbar .landing-nav-itms a:hover{
+    background-color: #0e238c;
+    border: none;
+    color: white;
+
+}
+
+.Navbar .logo img {
+    padding-left: 20px;
+    width: 50%;
+    height: 120%;
+}
+
+.Navbar .landing-nav-itms {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+}
+
+.Navbar .landing-nav-itms li {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+   
+
+    .Navbar .logo img {
+        width: 250px;
+        height: 80px;
+    }
+    .Navbar .landing-nav-itms li {
+        font-size: 15px; /* Default font size for desktop */
+    }
+    .Navbar{
+        width: 127vw;
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    .Navbar .landing-nav-itms li {
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Styles for desktop */
+    .Navbar {
+        padding: 0 20px;
+        width: 100vw; /* Adjust padding for desktop */
+    }
+
+    .Navbar .logo img {
+        width: 50%; /* Maintain original logo size on desktop */
+        height: 120%;
+    }
+
+    .Navbar .landing-nav-itms li {
+        font-size: 20px; /* Default font size for desktop */
+    }
+}

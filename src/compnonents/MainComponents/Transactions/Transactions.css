@@ -1,0 +1,80 @@
+/* Transactions.css */
+.recent-transactions{
+  width: 90%;
+  padding: 30px;
+  margin: 0 auto;
+  
+}
+.transactions-container {
+  width: 100%;
+  margin: 0 20px;
+  
+}
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.001);
+  backdrop-filter: blur(0px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+thead th {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+tbody td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination .ant-pagination-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+}
+
+.pagination .ant-pagination-item a {
+  color: white;
+}
+
+.pagination .ant-pagination-item-active {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.pagination .ant-pagination-item-active a {
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-60%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

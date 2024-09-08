@@ -1,0 +1,36 @@
+.image-container {
+  width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    animation: scroll 15s linear infinite;
+    padding: 40px 0 0 10px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .image-container img {
+    height: 100px;
+    margin: 10px 30px 10px 0;
+    max-width: none; 
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .image-container img {
+      height: 80px;
+    }
+    
+  }
+  
+  
+  

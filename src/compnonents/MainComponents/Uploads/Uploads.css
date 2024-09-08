@@ -1,0 +1,167 @@
+.upload {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-container {
+  animation: slidedown 1s ease-out;
+  
+  background-color: #FFFFFF;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  /* max-width: 1000px;
+  margin: 90px auto; */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.upload-container .illustration{
+  text-align: center;
+  width: 45%;
+}
+
+.upload-container .illustration .upload-img {
+  width: 400px;
+}
+.upload-container .upload-form-container{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+.upload-container .form-group {
+  display: flex;
+  flex-direction: column;
+
+
+}
+.upload-container .form-group .upload-btn{
+  padding: 6px;
+  margin: 10px 0px;
+  width: 40%;
+  border: none;
+  border-radius: 5px;
+  background-color:#1878ff;
+  cursor: pointer;
+  color: white;
+}
+.upload-container .form-group .label {
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.upload-container .form-group .input-file {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.upload-container .form-group .image-preview {
+  margin-top: 10px;
+}
+
+.upload-container .form-group .image-preview .preview-img {
+  max-width: 100px;
+  max-height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.upload-container .btn-submit {
+  width: 50%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #ff7a18;
+  background-image: linear-gradient(315deg, #1878ff 0%, #2419bb 74%);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-container .btn-submit:hover {
+  background-color: #e0671b;
+}
+
+.url-container {
+  margin-top: 20px;
+}
+
+.url-container .url-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.url-container .url-link {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.url-container .url-link:hover {
+  color: #23527c;
+}
+
+.image-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.image-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.image-modal .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.image-modal .modal-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

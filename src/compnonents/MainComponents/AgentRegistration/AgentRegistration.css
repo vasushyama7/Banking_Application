@@ -1,0 +1,129 @@
+.personalDetails {
+  border-radius: 5px;
+  background-color: white;
+  width: 82vw;
+  height: 80vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: slidedown 1s ease-out;
+}
+.container{
+  margin: 2px;
+}
+.personalDetails .ant-form-item-control-input-content{
+  width: 30px;
+}
+
+.personalDetails .heading {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  margin-top: 10px; 
+  margin-left: 35px;
+  margin-bottom: 30px;
+  color: rgb(3, 79, 134);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: slideInDown 2s ease-out;
+  cursor: pointer;
+}
+
+.personalDetails .heading:hover {
+  color: #4f92a5;
+  transform: scale(1.05);
+}
+
+.personalDetails .form-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-left: 80px;
+  margin-top: -15px;
+  animation: slidedownUp 0.5s ease-out;
+}
+
+.personalDetails .form-group {
+  flex: 1 1 100%;
+  margin: 0 10px;
+}
+.personalDetails .reg-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.form-section .button {
+  width: 180px;
+  margin-left: 29vw;
+}
+
+.form-section .intro {
+  margin-left: 28vw;
+}
+
+@media (min-width: 576px) {
+  .personalDetails .form-group {
+    flex: 1 1 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .personalDetails .form-group {
+    flex: 1 1 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .personalDetails {
+    width: 90vw;
+    margin-left: 0;
+    margin-right: 5vw;
+  }
+
+  .personalDetails .heading {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 2rem;
+  }
+
+  .personalDetails .form-section {
+    margin-left: 10px;
+    flex-direction: column;
+  }
+
+  .personalDetails .form-group {
+    margin: 0 5px;
+    width: 100%;
+  }
+
+  .personalDetails .center-content {
+    margin-top: 10px;
+  }
+
+  .personalDetails .intro {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .personalDetails .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+
+  .personalDetails .button .ant-btn-primary {
+    width: 100%;
+  }
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

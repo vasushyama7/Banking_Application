@@ -1,0 +1,92 @@
+/* Base styles */
+.ser-ctn-main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    color: black;
+    background-color: #F3F4F6;
+    margin-top: -4%;
+    padding-top: 5%;
+}
+
+.ser-left {
+    width: 40%;
+}
+
+.ser-left p {
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+}
+
+.ser-left button {
+    padding: 10px 30px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 6px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .ser-left {
+        width: 50%;
+    }
+
+    .ser-left p {
+        font-size: 18px;
+    }
+
+    .ser-left button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ser-left {
+        width: 60%;
+    }
+
+    .ser-left p {
+        font-size: 16px;
+    }
+
+    .ser-left button {
+        padding: 7px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ser-ctn-main {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3%;
+        margin-top: 10%;
+    }
+
+    .ser-left {
+        width: 80%;
+    }
+
+    .ser-left p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .ser-left button {
+        padding: 6px 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ser-left {
+        width: 90%;
+    }
+
+    .ser-left p {
+        font-size: 12px;
+    }
+
+    .ser-left button {
+        padding: 5px 15px;
+    }
+}

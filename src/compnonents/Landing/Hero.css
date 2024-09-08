@@ -1,0 +1,165 @@
+/* Base styles */
+.hero-all {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F4F6;
+    color: black;
+}
+
+.hero-main-ctn {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 7%;
+    background-color: #F3F4F6;
+    color: black;
+}
+
+.hero-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    flex-wrap: wrap;
+}
+
+.hero-cnt h1 {
+    font-size: 80px;
+    color: #1E54E5;
+}
+
+.hero-ctn-p {
+    font-size: 50px;
+    margin-top: -5%;
+}
+
+.hero-cnt h3 {
+    margin-top: -4%;
+}
+
+.hero-cnt button {
+    height: 30px;
+    border: none;
+    background: linear-gradient(to right, #CE5A71, #0e238c);
+    color: white;
+    font-size: 20px;
+    border-radius: 80px;
+}
+
+.hero-cnt a {
+    color: white;
+    list-style: none;
+}
+
+.hero-cnt button:hover {
+    background: linear-gradient(to right, #0e238c, #CE5A71);
+}
+
+.hero-img {
+    margin-left: 8%;
+}
+
+.barends {
+    margin-left: 22%;
+    margin-top: -5%;
+    align-items: center;
+}
+
+.barends img {
+    width: 180px;
+    height: 100px;
+    margin: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .hero-cnt h1 {
+        font-size: 60px;
+    }
+
+    .hero-ctn-p {
+        font-size: 40px;
+    }
+
+    .barends {
+        margin-left: 15%;
+    }
+
+    .hero-img {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-cnt h1 {
+        font-size: 50px;
+    }
+
+    .hero-ctn-p {
+        font-size: 35px;
+    }
+
+    .barends {
+        margin-left: 10%;
+    }
+
+    .hero-img {
+        margin-left: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-main-ctn {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+    }
+
+    .hero-cnt h1 {
+        font-size: 40px;
+    }
+
+    .hero-ctn-p {
+        font-size: 30px;
+    }
+
+    .hero-cnt button {
+        font-size: 18px;
+        height: 25px;
+    }
+
+    .barends {
+        margin-left: 0;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .barends img {
+        width: 150px;
+        height: 80px;
+    }
+
+    .hero-img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-cnt h1 {
+        font-size: 30px;
+    }
+
+    .hero-ctn-p {
+        font-size: 25px;
+    }
+
+    .hero-cnt button {
+        font-size: 16px;
+        height: 20px;
+    }
+
+    .barends img {
+        width: 120px;
+        height: 70px;
+    }
+}

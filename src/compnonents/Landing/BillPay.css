@@ -1,0 +1,45 @@
+/* Base styles */
+.bill-ctn {
+    background-color: #28376E;
+    width: 100vw;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white; /* Added for better contrast */
+}
+
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .bill-ctn {
+        padding-top: 3%;
+    }
+}
+
+@media (max-width: 992px) {
+    .bill-ctn {
+        padding-top: 4%;
+        margin-left: 5%;
+    }
+    .bill-ctn img{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .bill-ctn {
+        padding-top: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media (max-width: 576px) {
+    .bill-ctn {
+        padding-top: 6%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

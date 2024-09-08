@@ -1,0 +1,80 @@
+.main-page {
+    overflow-x: hidden;
+    background-color: #F3F4F6;
+}
+
+.sub-hed-card{
+
+    text-align: center;
+    padding-top: 40px;
+    color: black;
+}
+
+.card-group {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 30px;
+}
+
+.acard {
+    /* width: 300px;
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #ffffff, #3450db);
+    box-shadow: -5px 0 16px 32px rgba(0, 0, 0, 0.25);
+    position: relative;
+    perspective: 1000px;
+    border-radius: 20px;
+    border: 4px solid #e6e6e6; */
+    transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+    transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+    overflow: hidden;
+    position: relative;
+    margin-left: 0; /* reset margin-left */
+}
+
+.acard:not(:first-child) {
+    margin-left: 0;
+    margin-top: 20px; /* add space between cards */
+}
+
+.acard:hover {
+    transform: translate(-8px, -16px) rotate(3deg);
+    box-shadow: 0 20px 40px -10px rgba(32, 195, 187, 0.5);
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .card-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+
+    .acard:not(:first-child) {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
