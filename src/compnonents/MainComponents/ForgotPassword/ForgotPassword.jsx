@@ -8,7 +8,7 @@ const ForgotPassword = () => {
   const [messageText, setMessageText] = useState('');
   const navigate = useNavigate()
 
-  const handleSubmit = async (event) => {
+  const handlesubmit = async (event) => {
     event.preventDefault();
 
     try {
